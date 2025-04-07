@@ -1,4 +1,4 @@
-name: PR Workflow
+name: PR Workflow by ${{ github.actor }}
 
 on:
   push:
