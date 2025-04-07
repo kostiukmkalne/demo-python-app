@@ -1,4 +1,4 @@
-name: PR Workflow - ${{ github.actor }}
+name: PR Workflow
 
 on:
   push:
@@ -30,3 +30,6 @@ jobs:
 
       - name: Show actor
         run: echo "Actor:${{ github.actor }}"
+
+      - name: Set dynamic workflow name
+        run: echo "Workflow triggered by user:${{ github.actor }}"
