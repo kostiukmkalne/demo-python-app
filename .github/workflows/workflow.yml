@@ -1,7 +1,12 @@
 name: PR Workflow - ${{ github.actor }}
 
 on:
+  push:
+    branches:
+      - "main"
   pull_request:
+    branches:
+      - "main"
 
 env:
   GITHUB_ACTIONS: true
